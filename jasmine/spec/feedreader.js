@@ -98,8 +98,8 @@ $(function () {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         it('at least one entry is loaded', function (done) {
-            const feedEntries = document.querySelector('.feed');
-            expect(feedEntries.childElementCount > 0).toBe(true);
+            const feedEntries = document.querySelectorAll('.feed .entry');
+            expect(feedEntries.length > 0).toBe(true);
             done();
         });
     });
