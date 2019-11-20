@@ -118,7 +118,6 @@ $(function () {
                     secondFeed = document.querySelector('.feed').innerHTML;
                     done();
                 });
-                done();
             })
 
         });
